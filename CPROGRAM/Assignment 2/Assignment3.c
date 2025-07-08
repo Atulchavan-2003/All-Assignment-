@@ -13,12 +13,12 @@ void main(){
 	
 	if (a > b){
 		if(a > c )
-		 printf(" a is grater");
+		 printf(" a is greatest");
 	}
 	else if(b > c){
-		printf(" b is grater");
+		printf(" b is greatest");
 	}
 	else{
-		printf("c is grater");
+		printf("c is greatest");
 	}
 }
