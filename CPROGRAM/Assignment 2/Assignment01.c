@@ -8,7 +8,7 @@ void main () {
 	printf("Enter the firsr number\n");
 	scanf("%d",&no1);
 	
-	printf("enter the operator \n");
+	printf("enter the operator (+,-,/,*,%) \n");
 	fflush(stdin);
 	scanf("%c",&op);
 	
