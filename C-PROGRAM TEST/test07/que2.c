@@ -1,17 +1,19 @@
-#include<stdio.h>
-void main(){
-	int arr[100]={1,2,1,1};
-	int n = sizeof(arr);
-	int flag = 0;
-	for(int i=0;i<n;i++){
-		if(arr[i] == arr[n]){
-			flag++;
-		}
-		n--;
-	}
-	if(flag==1){
-		printf("not pali");
-	}
-	else
-	   printf("pali");
+#include <stdio.h>
+
+void main() {
+    int arr[100] = {12, 1, 1,12}; 
+    int n = 3;  
+    int flag = 0;
+
+    for (int i = 0; i < n / 2; i++) {
+        if (arr[i] != arr[n - i - 1]) {
+            flag = 1;  
+            break;
+        }
+    }
+
+    if (flag == 1)
+        printf("Not Palindrome\n");
+    else
+        printf("Palindrome\n");
 }
